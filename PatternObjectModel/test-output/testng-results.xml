@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34097" started-at="2018-06-03T07:13:57Z" finished-at="2018-06-03T07:14:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="34097" started-at="2018-06-03T07:13:57Z" finished-at="2018-06-03T07:14:31Z">
+      <class name="testcases.TC002_LoginForFailure">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="beforeSuite" is-config="true" duration-ms="880" started-at="2018-06-03T07:13:56Z" finished-at="2018-06-03T07:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="setData" is-config="true" duration-ms="1" started-at="2018-06-03T07:13:57Z" finished-at="2018-06-03T07:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="beforeClass" is-config="true" duration-ms="3" started-at="2018-06-03T07:13:57Z" finished-at="2018-06-03T07:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="beforeMethod" is-config="true" duration-ms="6654" started-at="2018-06-03T07:13:58Z" finished-at="2018-06-03T07:14:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginAndLogout(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="loginAndLogout" duration-ms="2071" started-at="2018-06-03T07:14:05Z" data-provider="fetchData" finished-at="2018-06-03T07:14:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password was empty reenter]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndLogout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="afterMethod" is-config="true" duration-ms="670" started-at="2018-06-03T07:14:07Z" finished-at="2018-06-03T07:14:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="beforeMethod" is-config="true" duration-ms="5185" started-at="2018-06-03T07:14:07Z" finished-at="2018-06-03T07:14:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginAndLogout(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="loginAndLogout" duration-ms="1955" started-at="2018-06-03T07:14:13Z" data-provider="fetchData" finished-at="2018-06-03T07:14:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[username was empty reenter]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndLogout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="afterMethod" is-config="true" duration-ms="653" started-at="2018-06-03T07:14:15Z" finished-at="2018-06-03T07:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="beforeMethod" is-config="true" duration-ms="5101" started-at="2018-06-03T07:14:15Z" finished-at="2018-06-03T07:14:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginAndLogout(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="loginAndLogout" duration-ms="1915" started-at="2018-06-03T07:14:20Z" data-provider="fetchData" finished-at="2018-06-03T07:14:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoSalesManager1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User not found.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndLogout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="afterMethod" is-config="true" duration-ms="652" started-at="2018-06-03T07:14:22Z" finished-at="2018-06-03T07:14:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="beforeMethod" is-config="true" duration-ms="5407" started-at="2018-06-03T07:14:23Z" finished-at="2018-06-03T07:14:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginAndLogout(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="loginAndLogout" duration-ms="1910" started-at="2018-06-03T07:14:28Z" data-provider="fetchData" finished-at="2018-06-03T07:14:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password incorrect.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndLogout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="afterMethod" is-config="true" duration-ms="648" started-at="2018-06-03T07:14:30Z" finished-at="2018-06-03T07:14:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-06-03T07:14:31Z" finished-at="2018-06-03T07:14:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC002_LoginForFailure@1213b92]" name="afterSuite" is-config="true" duration-ms="407" started-at="2018-06-03T07:14:31Z" finished-at="2018-06-03T07:14:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testcases.TC002_LoginForFailure -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
