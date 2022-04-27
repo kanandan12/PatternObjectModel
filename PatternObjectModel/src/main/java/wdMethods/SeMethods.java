@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -74,7 +75,7 @@ public class SeMethods extends Reporter implements WdMethods{
 				}
 			}
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.get(sUrl);
 			reportStep("The browser: "+browser+" launched successfully", "PASS");
 		} catch (WebDriverException e) {			
@@ -124,7 +125,7 @@ public class SeMethods extends Reporter implements WdMethods{
 	public void click(WebElement ele) {
 		String text = "";
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 10);
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.elementToBeClickable(ele));
 			
 			text = ele.getText();
@@ -140,7 +141,7 @@ public class SeMethods extends Reporter implements WdMethods{
 	public void clickWithNoSnap(WebElement ele) {
 		String text = "";
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 10);
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.elementToBeClickable(ele));
 			text = ele.getText();
 			ele.click();			
