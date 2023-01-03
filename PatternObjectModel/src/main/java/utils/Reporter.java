@@ -1,38 +1,30 @@
 package utils;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-
-import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.MediaEntityModelProvider;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.model.Media;
 
 public abstract class Reporter {
 
-	public static ExtentHtmlReporter html;
+	public static ExtentSparkReporter spark;
 	public static ExtentReports extent;
 	public static ExtentTest test, suiteTest;
 	public String testCaseName, testNodes, testDescription, category, authors;
 
 
 	public void startResult() {
-		html = new ExtentHtmlReporter("./reports/result.html");
-		html.setAppendExisting(true);		
+		spark = new ExtentSparkReporter("./reports/Spark.html");
+		spark.config().setDocumentTitle("Banking Application Automation");
 		extent = new ExtentReports();		
-		extent.attachReporter(html);	
+		extent.attachReporter(spark);	
 	}
 
 
 	public ExtentTest startTestModule(String testCaseName, String testDescription) {
 		suiteTest = extent.createTest(testCaseName, testDescription);
+		suiteTest.assignAuthor("Kamalakannan");
 		return suiteTest;
 	}
 
@@ -47,7 +39,7 @@ public abstract class Reporter {
 
 	public void reportStep(String desc, String status, boolean bSnap)  {
 
-		MediaEntityModelProvider img = null;
+		Media img = null;
 		if(bSnap && !status.equalsIgnoreCase("INFO")){
 
 			long snapNumber = 100000L;
@@ -55,7 +47,8 @@ public abstract class Reporter {
 			try {
 				img = MediaEntityBuilder.createScreenCaptureFromPath
 						("./../reports/images/"+snapNumber+".jpg").build();
-			} catch (IOException e) {				
+			} catch (Exception e) {
+				e.printStackTrace();
 			}
 		}
 		if(status.equalsIgnoreCase("PASS")) {

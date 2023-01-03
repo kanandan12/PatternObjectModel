@@ -1,7 +1,6 @@
 package wdMethods;
 
 import java.net.MalformedURLException;
-
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
